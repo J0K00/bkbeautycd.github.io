@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BK BEAUTY - Formation en Maquillage pour Débutants</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            background-image: url('./bg.png');
+            background-size: 100% 100%;
+            background-position: center;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            min-height: 100vh;
+            position: relative;
+            margin: 0;
+            padding: 0;
+        }
+        .bg-overlay {
+            background-color: rgba(0, 0, 0, 0.5);
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body class="flex items-center justify-center min-h-screen p-4">
+    <div class="bg-overlay"></div>
+    
+    <div class="relative z-10 w-full max-w-2xl">
+        <!-- Logo -->
+        <div class="flex justify-center mb-8">
+            <div class="bg-white p-4 rounded-full shadow-2xl transform hover:scale-105 transition-transform">
+                <div class="w-32 h-32 bg-pink-100 rounded-full flex items-center justify-center text-4xl font-bold text-pink-600 animate-bounce">
+                    <style>
+                        @keyframes bounce {
+                            0%, 20%, 50%, 80%, 100% {
+                                transform: translateY(0);
+                            }
+                            40% {
+                                transform: translateY(-25px);
+                            }
+                        }
+                        .animate-bounce {
+                            animation: bounce 2s infinite;
+                        }
+                    </style>
+                    <img src="./logo.png" alt="Logo">
+                </div>
+            </div>
+        </div>
+
+        <!-- Info Card -->
+        <div class="bg-white bg-opacity-80 backdrop-blur-sm rounded-2xl shadow-2xl p-8 transform hover:scale-102 transition-transform">
+            <h1 class="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-6">Formation Maquillage pour Débutants et Amateurs</h1>
+            
+            <div class="space-y-6 text-gray-700">
+                <div class="flex items-start">
+                    <svg class="h-6 w-6 text-pink-500 mr-3 mt-1 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                    </svg>
+                    <div>
+                        <h3 class="font-semibold text-lg">Contactez-nous</h3>
+                        <a href="tel:+243829941808" class="hover:text-pink-600 transition-colors">+243 82 994 1808</a>
+                    </div>
+                </div>
+                
+                <div class="flex items-start">
+                    <svg class="h-6 w-6 text-pink-500 mr-3 mt-1 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                    </svg>
+                    <div>
+                        <h3 class="font-semibold text-lg">Adresse</h3>
+                        <span>50/20, Miao, Terminus, Lemba</span>
+                        <br>
+                        <a href="https://maps.apple.com/frame?map=hybrid&center=-4.389271721968801%2C15.32949523040287&span=0.0015644902827975926%2C0.0015422701835632324" target="_blank" class="underline text-pink-600 hover:text-pink-800 transition-colors">Pour Apple</a>
+                        <br>
+                        <a href="https://maps.app.goo.gl/Mm345CnzaKrFsSXk8" target="_blank" class="underline text-pink-600 hover:text-pink-800 transition-colors">Pour Android</a>
+                    </div>
+                </div>
+                
+                <div class="pt-4 text-center animate-zoom">
+                    <style>
+                        @keyframes zoom {
+                            0% {
+                                transform: scale(1);
+                            }
+                            40% {
+                                transform: scale(1.1);
+                            }
+                            100% {
+                                transform: scale(1);
+                            }
+                        }
+                        .animate-zoom {
+                            animation: zoom 2s infinite;
+                        }
+                    </style>
+                    <a href="https://wa.me/243829941808" target="_blank" class="inline-block bg-pink-500 hover:bg-pink-700 text-white font-semibold py-3 px-8 rounded-full transition-colors duration-300 transform hover:scale-105 mr-4">
+                        Réservez votre place
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
